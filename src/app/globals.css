@@ -31,3 +31,48 @@ body {
     text-wrap: balance;
   }
 }
+
+.default-line-color{
+  background-color: theme("colors.system.purple50");
+}
+
+.change-line-color{
+  background-color: theme("colors.system.green60");
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.pulse-animation{
+  animation: pulse 1s cubic-bezier(0.4,0,0.6,1) infinite;
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative overflow-hidden bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50;
+  }
+
+  .btn-text {
+    @apply relative z-10;
+  }
+
+  .btn-animation {
+    @apply absolute inset-0 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

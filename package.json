@@ -9,16 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.2.5",
+    "pathfinder_visualizer": "file:",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "react-icons": "^5.3.0",
+    "react-tsparticles": "^2.12.2",
+    "tailwind-merge": "^2.4.0",
+    "tsparticles": "^3.5.0",
+    "tsparticles-engine": "^2.12.0",
+    "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
